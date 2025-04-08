@@ -13,50 +13,37 @@
   <link rel="stylesheet" href="src/style.css" class="css" />
   <title>Weather App Project</title>
 </head>
+
 <body>
     <div class="weather-app">
         <header>
             <form class="search-form" id="search-form">
-                <input type="search" class="search-form-input" id="search-form-input" placeholder="Enter a city..."
-                    required />
-                <input type="submit" class="search-form-button" />
+                <input type="search" placeholder="Enter a city.." required id="search-form-input"
+                    class="search-form-input" />
+                <input type="submit" value="Search" class="search-form-button" />
             </form>
         </header>
         <main>
-            <h1 class="weather-app-city" id="weather-app-city"></h1>
-            <div>
-                <p class="weather-app-current">
-                    <span class="time" id="time"></span>
-                    <br />
-                    <span class="weather-condition" id="weather-condition"></span>
-                </p>
-            </div>
-            <div class="weather-app-data" id="weather-app-data">
-                <div class="weather-app-temperature-container">
-                    <div class="weather-app-icon" id="weather-app-icon"></div>
-                    <div class="today-temperature" id="weather-app-temperature"></div>
-                    <div class="weather-app-unit" id="weather-app-unit">
-                        <a href="#" id="celsius-link">°C</a>
-                        |
-                        <a href="#" id="fahrenheit-link">°F</a>
-                    </div>
-                </div>
+            <div class="weather-app-data">
                 <div>
-                    <p class="weather-app-details" id="weather-app-details">
-                        Low/High:
-                        <span class="today-minimum" id="today-minimum"></span> /
-                        <span class="today-maximum" id="today-maximum"></span>
+                    <h1 class="weather-app-city" id="city"></h1>
+                    <p class="weather-app-details">
+                        <span id="time"></span>,
+                        <span id="description"></span>
                         <br />
-                        Humidity: <strong id="humidity"></strong>
-                        <br />
-                        Wind: <strong id="wind-speed"></strong>
+                        Humidity: <strong id="humidity"></strong>, Wind:
+                        <strong id="wind-speed"></strong>
                     </p>
+                </div>
+                <div class="weather-app-temperature-container">
+                    <div id="icon"></div>
+                    <div class="weather-app-temperature" id="temperature"></div>
+                    <div class="weather-app-unit">°C</div>
                 </div>
             </div>
             <div class="weather-forecast" id="forecast"></div>
         </main>
-    </div>
-
+        
     <footer>
       Coded by
         <a href="https://github.com/ShadowLoba415" target="_blank"> Erica Lopez</a>, 
